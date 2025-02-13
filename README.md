@@ -1,6 +1,8 @@
 # VoiceAssistant
 A Smart AI-Powered Voice Assistant with Advanced NLP & System Automation
 Introducing an AI powered voice assistant that seamlessly integrates speech recognition, conversational AI, and system automation to create a more intelligent and responsive user experience. Designed to understand complex commands, retain context, execute system tasks, retrieve real-time information, and respond through voice output, this assistant offers a natural and efficient way to interact with technology.
+
+
 🔍 Key Features & Capabilities
 ✅ 🎤 Whisper AI-Powered Speech Recognition
 Leverages OpenAI’s Whisper ASR for highly accurate live speech-to-text conversion, effectively handling diverse accents and background noise.
