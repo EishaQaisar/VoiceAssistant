@@ -16,12 +16,17 @@ import subprocess
 # Load spaCy model
 #nlp = spacy.load("en_core_web_sm")
 
-try:
-    nlp = spacy.load("en_core_web_sm")
-except OSError:
-    subprocess.run(["python", "-m", "spacy", "download", "en_core_web_sm"])
-    nlp = spacy.load("en_core_web_sm")
 
+def load_spacy_model():
+    try:
+        nlp = spacy.load("en_core_web_sm")
+    except OSError:
+        print("Downloading en_core_web_sm model...")
+        subprocess.run([sys.executable, "-m", "spacy", "download", "en_core_web_sm"], check=True)
+        nlp = spacy.load("en_core_web_sm")  # Load it again after downloading
+    return nlp
+
+nlp = load_spacy_model()
 
 # Hugging Face API setup
 HF_API_KEY = "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"
