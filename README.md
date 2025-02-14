@@ -35,3 +35,18 @@ Provides spoken responses, enhancing interaction fluidity and accessibility.
 
 🚀 Data Retrieval: Local indexing & external APIs for intelligent lookups.
 
+🚀 How to Run
+1️⃣ Clone the Repository
+git clone https://github.com/21F-9108/VoiceAssistant.git
+cd VoiceAssistant
+
+2️⃣ Install Dependencies
+pip install -r requirements.txt
+
+3️⃣ Download spaCy Language Model
+python -m spacy download en_core_web_sm
+
+4️⃣ Run the Voice Assistant
+streamlit run main.py
+
+
