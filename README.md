@@ -35,7 +35,10 @@ Provides spoken responses, enhancing interaction fluidity and accessibility.
 
 🚀 Data Retrieval: Local indexing & external APIs for intelligent lookups.
 
+
+
 🚀 How to Run
+
 1️⃣ Clone the Repository
 git clone https://github.com/21F-9108/VoiceAssistant.git
 cd VoiceAssistant
