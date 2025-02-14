@@ -13,13 +13,22 @@ import speech_recognition as sr
 
 # Load spaCy model
 #nlp = spacy.load("en_core_web_sm")
-@st.cache_resource
 def load_spacy_model():
-    try:
-        nlp = spacy.load("en_core_web_sm")
-    except:
-        spacy.cli.download("en_core_web_sm")
-        nlp = spacy.load("en_core_web_sm")
+    model_name = "en_core_web_sm"
+    if not spacy.util.is_package(model_name):
+        # Download the model
+        url = "https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.5.0/en_core_web_sm-3.5.0.tar.gz"
+        response = requests.get(url)
+        
+        # Save the model to a local directory
+        os.makedirs("models", exist_ok=True)
+        with open(f"models/{model_name}.tar.gz", "wb") as f:
+            f.write(response.content)
+        
+        # Load the model from the local directory
+        nlp = spacy.load(f"models/{model_name}.tar.gz")
+    else:
+        nlp = spacy.load(model_name)
     return nlp
 
 nlp = load_spacy_model()
