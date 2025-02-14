@@ -10,9 +10,18 @@ from datetime import datetime
 from fuzzywuzzy import fuzz
 import streamlit as st
 import speech_recognition as sr
+import subprocess
+
 
 # Load spaCy model
-nlp = spacy.load("en_core_web_sm")
+#nlp = spacy.load("en_core_web_sm")
+
+try:
+    nlp = spacy.load("en_core_web_sm")
+except OSError:
+    subprocess.run(["python", "-m", "spacy", "download", "en_core_web_sm"])
+    nlp = spacy.load("en_core_web_sm")
+
 
 # Hugging Face API setup
 HF_API_KEY = "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"
