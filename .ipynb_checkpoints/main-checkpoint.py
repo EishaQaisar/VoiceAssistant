@@ -12,7 +12,17 @@ import streamlit as st
 import speech_recognition as sr
 
 # Load spaCy model
-nlp = spacy.load("en_core_web_sm")
+#nlp = spacy.load("en_core_web_sm")
+@st.cache_resource
+def load_spacy_model():
+    try:
+        nlp = spacy.load("en_core_web_sm")
+    except:
+        spacy.cli.download("en_core_web_sm")
+        nlp = spacy.load("en_core_web_sm")
+    return nlp
+
+nlp = load_spacy_model()
 
 # Hugging Face API setup
 HF_API_KEY = "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"
