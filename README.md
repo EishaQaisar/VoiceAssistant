@@ -50,11 +50,11 @@ Generates natural-sounding speech responses for a more immersive experience.
 
 <p align="center">
   <img src="./images/4.jpg" alt="VoiceAssistant Screenshot 3" width="400" />
-  <img src="./images/6.jpg" alt="VoiceAssistant Screenshot 4" width="400" />
+  <img src="./images/8.jpg" alt="VoiceAssistant Screenshot 4" width="400" />
 </p>
 
 <p align="center">
-  <img src="./images/8.jpg" alt="VoiceAssistant Screenshot 3" width="400" />
+  <img src="./images/6.jpg" alt="VoiceAssistant Screenshot 3" width="400" />
   <img src="./images/10.jpg" alt="VoiceAssistant Screenshot 4" width="400" />
 </p>
 ---
