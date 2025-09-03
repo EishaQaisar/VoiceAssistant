@@ -1,61 +1,76 @@
-# VoiceAssistant
-A Smart AI-Powered Voice Assistant with Advanced NLP & System Automation
-Introducing an AI powered voice assistant that seamlessly integrates speech recognition, conversational AI, and system automation to create a more intelligent and responsive user experience. Designed to understand complex commands, retain context, execute system tasks, retrieve real-time information, and respond through voice output, this assistant offers a natural and efficient way to interact with technology.
+# 🗣️ VoiceAssistant  
+### **A Smart AI-Powered Voice Assistant with Advanced NLP & System Automation**
 
+Introducing **VoiceAssistant** — an AI-powered voice assistant that seamlessly integrates **speech recognition**, **conversational AI**, and **system automation** to create a more intelligent and responsive user experience.  
+It can understand **complex commands**, retain **context**, execute **system tasks**, retrieve **real-time information**, and respond through **natural voice output** — making human-computer interaction effortless.
 
-🔍 Key Features & Capabilities
+---
 
-✅ 🎤 Whisper AI-Powered Speech Recognition
-Leverages OpenAI’s Whisper ASR for highly accurate live speech-to-text conversion, effectively handling diverse accents and background noise.
+## 🔑 Key Features & Capabilities
 
-✅ 💬 Conversational AI with Mistral-7B & BlenderBot
-Integrates Mistral-7B for context-aware interactions and BlenderBot-400M Distill for dynamic, multi-turn conversations, ensuring fluid and engaging dialogue.
+✅ **🎤 Whisper AI-Powered Speech Recognition**  
+Leverages **OpenAI’s Whisper ASR** for highly accurate live speech-to-text conversion, effectively handling diverse accents and background noise.
 
-✅ 🧠 Advanced NLP with Context Awareness
-Utilizes spaCy’s dependency parsing, semantic similarity scoring, and fuzzy matching to accurately interpret commands, even when involving nuanced phrasing.
+✅ **💬 Conversational AI with Mistral-7B & BlenderBot**  
+Integrates **Mistral-7B** for context-aware interactions and **BlenderBot-400M Distill** for dynamic, multi-turn conversations, ensuring fluid and engaging dialogue.
 
-✅ 📂 Efficient Program Execution with Voice Commands
-Enables system-level automation using Python, allowing users to launch system level applications with voice commands.
+✅ **🧠 Advanced NLP with Context Awareness**  
+Uses **spaCy’s dependency parsing**, **semantic similarity scoring**, and **fuzzy matching** to accurately interpret commands, even with nuanced phrasing.
 
-✅ 🔍 Real-Time Information Retrieval
-Fetches live updates, summaries, and insights using local indexing and external APIs, ensuring fast and relevant responses.
+✅ **📂 System-Level Automation via Voice**  
+Launch programs, open files, or run OS commands hands-free using Python automation.
 
-✅ 🔊 Responsive Voice Output
-Provides spoken responses, enhancing interaction fluidity and accessibility.
+✅ **🔍 Real-Time Information Retrieval**  
+Fetches **live updates**, **summaries**, and **intelligent insights** using local indexing and external APIs.
 
-🛠️ Tech Stack & Methodologies Used
+✅ **🔊 Responsive Voice Output**  
+Generates natural-sounding speech responses for a more immersive experience.
 
-🚀 Speech-to-Text: Whisper AI (ASR)
+---
 
-🚀 Conversational AI: Mistral-7B, Facebook BlenderBot-400M Distill
+## 🛠️ Tech Stack & Methodologies
 
-🚀 NLP & Command Processing: spaCy, Fuzzy Matching, Dependency Parsing
+| **Component**           | **Technology Used** |
+|------------------------|--------------------|
+| 🎤 Speech-to-Text | [Whisper AI (ASR)](https://github.com/openai/whisper) |
+| 💬 Conversational AI | Mistral-7B, BlenderBot-400M Distill |
+| 🧠 NLP & Parsing | spaCy (dependency parsing), Fuzzy Matching |
+| ⚙️ OS-Level Automation | Python (`subprocess`, `os`) |
+| 🔍 Data Retrieval | Local Indexing + External APIs |
+| 🎙 Voice Output | TTS (Text-to-Speech) |
 
-🚀 OS-Level Automation: Python (subprocess, os for system commands)
+---
 
-🚀 Data Retrieval: Local indexing & external APIs for intelligent lookups.
+## 📸 Screenshots
 
+<p align="center">
+  <img src="./images/1.jpg" alt="VoiceAssistant Screenshot 1" width="400" />
+  <img src="./images/2.jpg" alt="VoiceAssistant Screenshot 2" width="400" />
+</p>
 
+<p align="center">
+  <img src="./images/3.jpg" alt="VoiceAssistant Screenshot 3" width="400" />
+  <img src="./images/4.jpg" alt="VoiceAssistant Screenshot 4" width="400" />
+</p>
 
-🚀 How to Run:
+---
 
+## 🚀 How to Run
 
-1️⃣ Clone the Repository
-
+### 1️⃣ Clone the Repository
+```bash
 git clone https://github.com/21F-9108/VoiceAssistant.git
-
 cd VoiceAssistant
-
-2️⃣ Install Dependencies
-
+```
+### 2️⃣ Install Dependencies
+```bash
 pip install -r requirements.txt
-
-3️⃣ Download spaCy Language Model
-
+```
+### 3️⃣ Download spaCy Language Model
+```bash
 python -m spacy download en_core_web_sm
-
-4️⃣ Run the Voice Assistant
-
+```
+### 4️⃣ Run the Voice Assistant
+```bash
 streamlit run main.py
-
-
+```
